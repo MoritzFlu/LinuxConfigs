@@ -14,8 +14,16 @@ sudo apt install -y i3-gaps ulauncher nitrogen terminator compton
 # install colour theme
 mkdir ~/.themes
 unzip gtk-master.zip -d ~/.themes/Dracula
-gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
-gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
+echo "gtk-theme-name = Ant-Dracula" >> ~/.config/gtk-3.0/settings.ini
+echo "gtk-theme-name = Ant-Dracula" >> ~/.config/gtk-4.0/settings.ini
+
+
+
+# Polybar
+#sudo apt-get install cmake cmake-data libcairo2-dev libxcb1-dev libxcb-ewmh-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-randr0-dev libxcb-util0-dev
+#libxcb-xkb-dev pkg-config python3-xcbgen xcb-proto libxcb-xrm-dev i3-wm
+#libasound2-dev libmpdclient-dev libiw-dev libcurl4-openssl-dev libpulse-dev
+
 
 
 # Copy i3 configs
